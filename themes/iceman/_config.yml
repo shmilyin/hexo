@@ -14,7 +14,6 @@ menu:
 widgets: 
 - category
 - tag
-- tagcloud
 - archive
 ## provide six widgets:category,tag,rss,archive,tagcloud,links.
 ## modify links in `/layout/_widget/links.ejs`.
@@ -31,16 +30,16 @@ apple_icon: img/icon_114.jpg ## size:114px*114px,please put image into the theme
 
 #### Author Avatar Picture
 author_img_enable: true ## display author avatar picture
-dataURI: false
+dataURI: true
 ## if the picture's format is dataURI please set the value to true,otherwise set the value to false.
 ## convert an image into base 64 data URIs http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ .
-author_img_data: ''
+author_img_data: http://i13.tietuku.com/7e27d94ed3497b53.jpg
 ## paste the dataURI in ONE LINE and included it by ''.
 author_img: img/icon_220.jpg ## size:220px*220px.
 ## if the picture's format is `.png` or `.jpg`  instead of dataURI,you should set the `dataURI` value to false.
 
 #### Font
-ShowCustomFont: true
+ShowCustomFont: false
 ## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/iceman/source/css`.
 
 #### Toc

@@ -4,6 +4,7 @@ categories:
 - notes
 tags:
 - PHP
+- Xdebug
 ---
 
 ## 我的环境

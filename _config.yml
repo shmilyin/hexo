@@ -54,6 +54,7 @@ tag_map:
 	linux: linux
 	google: google
 	php: php
+	Xdebug: Xdebug
 
 
 
@@ -78,9 +79,9 @@ theme: yilia
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:github
-  #repository: https://github.com:shmilyin/shmilyin.github.io.git
-  #branch: master
-  #message: Site updated: {{ now("YYYY-MM-DD HH:mm:ss") }}
+  type: git
+  repository: git@github.com:shmilyin/shmilyin.github.io.git
+  branch: master
+  #message: [Site updated: {{ now("YYYY-MM-DD HH:mm:ss") }}]
 
 port: 4001

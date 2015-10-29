@@ -6,13 +6,13 @@
 title: shmilyin的小窝
 subtitle:
 description:
-author: shmilyin的小窝
-language: zh-Hans
+author: shmilyin
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://shmilyin.github.io
+url: http://www.ifengxinzi.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -74,7 +74,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: yilia
+theme: iceman
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html

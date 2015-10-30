@@ -29,8 +29,8 @@ Xdebug当前最新版本是2.3.2，为了匹配我的PHP环境，我下载的是
 
 修改`php.ini`的配置，下面的配置仅供参考，路径要换成自己的！
 我这里用的是相对路径（也可以换成绝对路径）
-### 注意：php5.2以下使用zend_extension_ts,php5.3及以上使用zend_extension###
-我第一次配置就是被这个点给坑了
+>注意：php5.2以下使用zend_extension_ts,php5.3及以上使用zend_extension
+>我第一次配置就是被这个点给坑了
 
 	[Xdebug]
 	zend_extension="..\..\xdebug\php_xdebug-2.1.2-5.3-vc6.dll"
@@ -45,8 +45,8 @@ Xdebug当前最新版本是2.3.2，为了匹配我的PHP环境，我下载的是
     
 重启服务器，刷新phpinfo()
 如果界面里面显示有
-### xdebug
-
+```html
+xdebug
 <table>
     <tr> 
         <th>xdebug support</th>
@@ -57,6 +57,7 @@ Xdebug当前最新版本是2.3.2，为了匹配我的PHP环境，我下载的是
 		<td>2.1.2</td>
     </tr>
 </table>
+```
 则说明配置成功，如果没有，请检查步骤重试。
 
 ### 3.设置phpstorm

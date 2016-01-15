@@ -12,7 +12,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.ifengxinzi.com
+url: https://www.ifengxinzi.com   # with the https protocol
+enforce_ssl: www.ifengxinzi.com   # without any protocol
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -85,3 +86,5 @@ deploy:
   #message: [Site updated: {{ now("YYYY-MM-DD HH:mm:ss") }}]
 
 port: 4001
+
+

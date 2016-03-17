@@ -85,6 +85,6 @@ deploy:
   branch: master
   #message: [Site updated: {{ now("YYYY-MM-DD HH:mm:ss") }}]
 
-port: 4001
+port: 4000
 
 

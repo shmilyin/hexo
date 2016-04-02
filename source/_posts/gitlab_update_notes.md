@@ -23,6 +23,8 @@ sudo -u git -H bundle exec rake gitlab:backup:create RAILS_ENV=production
 ```
 sudo service gitlab stop
 ```
+<!--more-->
+
 #### 2.Run GitLab upgrade tool
 Please replace X.X.X with the [latest GitLab release](https://packages.gitlab.com/gitlab/gitlab-ce).
 

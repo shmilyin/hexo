@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Ahri-程序猿
-subtitle: 大龄单身程序猿
-description: 大龄单身程序猿Ahri
+title: Ahri's Blog
+subtitle: 阿狸的小部落111
+description: 阿狸的小部落
 author: Ahri
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://www.ifengxinzi.com   # with the https protocol
-enforce_ssl: www.ifengxinzi.com   # without any protocol
+url: https://blog.ifengxinzi.com   # with the https protocol
+enforce_ssl: https://blog.ifengxinzi.com   # without any protocol
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -27,7 +27,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-
+archive: 1
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -56,6 +56,7 @@ tag_map:
 	google: google
 	php: php
 	Xdebug: Xdebug
+  Gitlab: Gitlab
 
 
 

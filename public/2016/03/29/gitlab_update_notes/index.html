@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Gitlab 源码安装版 升级笔记 | Ahri-程序猿</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>Gitlab 源码安装版 升级笔记 | Ahri&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Gitlab 升级笔记
 适用于使用源码安装的Gitlab
@@ -13,15 +14,15 @@ GitLab Community Edition 8.3.2 fbb8b6e&amp;gt;
 备份完成后会在/home/git/gitlab">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Gitlab 源码安装版 升级笔记">
-<meta property="og:url" content="https://www.ifengxinzi.com/2016/03/29/gitlab_update_notes/index.html">
-<meta property="og:site_name" content="Ahri-程序猿">
+<meta property="og:url" content="https://blog.ifengxinzi.com/2016/03/29/gitlab_update_notes/index.html">
+<meta property="og:site_name" content="Ahri's Blog">
 <meta property="og:description" content="Gitlab 升级笔记
 适用于使用源码安装的Gitlab
 GitLab Community Edition 8.3.2 fbb8b6e&amp;gt;
 
 0. Backup12cd /home/git/gitlabsudo -u git -H bundle exec rake gitlab:backup:create RAILS_ENV=production
 备份完成后会在/home/git/gitlab">
-<meta property="og:updated_time" content="2016-03-29T08:51:23.000Z">
+<meta property="og:updated_time" content="2016-04-02T15:39:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Gitlab 源码安装版 升级笔记">
 <meta name="twitter:description" content="Gitlab 升级笔记
@@ -31,13 +32,14 @@ GitLab Community Edition 8.3.2 fbb8b6e&amp;gt;
 0. Backup12cd /home/git/gitlabsudo -u git -H bundle exec rake gitlab:backup:create RAILS_ENV=production
 备份完成后会在/home/git/gitlab">
   
-    <link rel="alternative" href="/atom.xml" title="Ahri-程序猿" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Ahri&#39;s Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
   <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
+
 <body>
   <div id="container">
     <div class="left-col">
@@ -55,7 +57,7 @@ GitLab Community Edition 8.3.2 fbb8b6e&amp;gt;
 		</hgroup>
 
 		
-		<p class="header-subtitle">大龄单身程序猿</p>
+		<p class="header-subtitle">阿狸的小部落111</p>
 		
 
 		
@@ -83,10 +85,10 @@ GitLab Community Edition 8.3.2 fbb8b6e&amp;gt;
 					<div class="tips-arrow"></div>
 					<ul class="tips-inner">
 						<li>菜单</li>
-						<li>标签</li>
+						<li>標籤</li>
 						
 						
-						<li>关于我</li>
+						<li>關於</li>
 						
 					</ul>
 				</div>
@@ -104,6 +106,8 @@ GitLab Community Edition 8.3.2 fbb8b6e&amp;gt;
 							<li><a href="/archives">所有文章</a></li>
 				        
 							<li><a href="/categories/notes">笔记</a></li>
+				        
+							<li><a href="/about">关于我</a></li>
 				        
 						</ul>
 					</nav>
@@ -130,13 +134,14 @@ GitLab Community Edition 8.3.2 fbb8b6e&amp;gt;
 				
 				<section class="switch-part switch-part3">
 				
-					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+					<div id="js-aboutme">曾经有过梦想的人……</div>
 				</section>
 				
 			</div>
 		</div>
 	</header>				
 </div>
+
     </div>
     <div class="mid-col">
       <nav id="mobile-nav">
@@ -147,13 +152,15 @@ GitLab Community Edition 8.3.2 fbb8b6e&amp;gt;
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
+			
 				<img lazy-src="https://avatars2.githubusercontent.com/u/6157554?v=3&amp;s=460" class="js-avatar">
+			
 			</div>
 			<hgroup>
 			  <h1 class="header-author">Ahri</h1>
 			</hgroup>
 			
-			<p class="header-subtitle">大龄单身程序猿</p>
+			<p class="header-subtitle">阿狸的小部落111</p>
 			
 			<nav class="header-menu">
 				<ul>
@@ -163,6 +170,8 @@ GitLab Community Edition 8.3.2 fbb8b6e&amp;gt;
 					<li><a href="/archives">所有文章</a></li>
 		        
 					<li><a href="/categories/notes">笔记</a></li>
+		        
+					<li><a href="/about">关于我</a></li>
 		        
 		        <div class="clearfix"></div>
 				</ul>
@@ -177,6 +186,7 @@ GitLab Community Edition 8.3.2 fbb8b6e&amp;gt;
 		</header>				
 	</div>
 </nav>
+
       <div class="body-wrap"><article id="post-gitlab_update_notes" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -225,6 +235,7 @@ GitLab Community Edition 8.3.2 fbb8b6e&amp;gt;
 <h4 id="0-_Backup">0. Backup</h4><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/home/</span>git/gitlab</span><br><span class="line">sudo -u git -H bundle exec rake <span class="string">gitlab:</span><span class="string">backup:</span>create RAILS_ENV=production</span><br></pre></td></tr></table></figure>
 <p>备份完成后会在<code>/home/git/gitlab/backup</code>文件夹下生成已时间戳命名的文件<code>1459217332_gitlab_backup.tar</code></p>
 <h4 id="1-_Stop_server">1. Stop server</h4><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service gitlab <span class="literal">stop</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h4 id="2-Run_GitLab_upgrade_tool">2.Run GitLab upgrade tool</h4><p>Please replace X.X.X with the <a href="https://packages.gitlab.com/gitlab/gitlab-ce" target="_blank" rel="external">latest GitLab release</a>.</p>
 <p>GitLab 7.9 adds <code>nodejs</code> as a dependency. GitLab 7.6 adds <code>libkrb5-dev</code> as a dependency (installed by default on Ubuntu and OSX). GitLab 7.2 adds <code>pkg-config</code> and <code>cmake</code> as dependency. Please check the dependencies in the <a href="https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/install/installation.md#1-packages-dependencies" target="_blank" rel="external">installation guide</a>.</p>
 <figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> /home/git/gitlab</span><br><span class="line">sudo -<span class="keyword">u</span> git -<span class="keyword">H</span> ruby -Ilib -<span class="keyword">e</span> 'require <span class="string">"gitlab/upgrader"</span>' -<span class="keyword">e</span> '<span class="keyword">class</span> Gitlab::Upgrader' -<span class="keyword">e</span> 'def latest_version_raw' -<span class="keyword">e</span> '<span class="string">"vX.X.X"</span>' -<span class="keyword">e</span> 'end' -<span class="keyword">e</span> 'end' -<span class="keyword">e</span> 'Gitlab::Upgrader.new.execute'</span><br><span class="line"></span><br><span class="line"># to perform a non-interactive install (<span class="keyword">no</span> user <span class="keyword">input</span> required) you can add -<span class="literal">y</span></span><br><span class="line"># sudo -<span class="keyword">u</span> git -<span class="keyword">H</span> ruby -Ilib -<span class="keyword">e</span> 'require <span class="string">"gitlab/upgrader"</span>' -<span class="keyword">e</span> '<span class="keyword">class</span> Gitlab::Upgrader' -<span class="keyword">e</span> 'def latest_version_raw' -<span class="keyword">e</span> '<span class="string">"vX.X.X"</span>' -<span class="keyword">e</span> 'end' -<span class="keyword">e</span> 'end' -<span class="keyword">e</span> 'Gitlab::Upgrader.new.execute' -- -<span class="literal">y</span></span><br></pre></td></tr></table></figure>
@@ -262,26 +273,13 @@ GitLab Community Edition 8.3.2 fbb8b6e&amp;gt;
 </article>
 
 
-<div class="share">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">分享到：</span>
-		<a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
+
 
 
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="gitlab_update_notes" data-title="Gitlab 源码安装版 升级笔记" data-url="https://www.ifengxinzi.com/2016/03/29/gitlab_update_notes/"></div>
+	<div class="ds-thread" data-thread-key="gitlab_update_notes" data-title="Gitlab 源码安装版 升级笔记" data-url="https://blog.ifengxinzi.com/2016/03/29/gitlab_update_notes/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

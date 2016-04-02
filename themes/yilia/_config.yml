@@ -3,7 +3,7 @@ menu:
   主页: /
   所有文章: /archives
   笔记: /categories/notes
-  # 随笔: /tags/随笔
+  关于我: /about
 
 # SubNav
 subnav:
@@ -20,8 +20,10 @@ subnav:
 
 rss: /atom.xml
 
+archive: 1
+
 # Content
-excerpt_link: more
+excerpt_link: More
 fancybox: true
 mathjax: true
 
@@ -56,4 +58,4 @@ friends:
 #不开启——
 #aboutme: false
 #开启——
-aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
+aboutme: 曾经有过梦想的人……

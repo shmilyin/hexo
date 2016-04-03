@@ -194,12 +194,8 @@ a {
     width: 100%;
   }
 }
-.jiathis_style {
-  margin-left: 42px;
-  display: inline-block;
-}
-.jiathis_style a {
-  border: none;
+.share_jia {
+  padding: 0 40px;
 }
 #container {
   position: relative;

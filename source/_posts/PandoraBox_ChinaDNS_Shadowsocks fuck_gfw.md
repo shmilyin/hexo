@@ -27,6 +27,7 @@ PandoraBox系统内置Shadwosocks,ChinaDNS等服务，十分方便，如果是op
 ![ChinaDNS设置](https://i.imgur.com/ucERfzT.png)
 
 >之前就是这里设置错了没在意看，到时只能上去Google，却上不去Youtube,Facebook等（Google还没被DNS污染之前，现在已经加入DNS污染全家桶了）。
+
 ### 2. 设置Shadowsocks
 
 打开 `服务`>`Shadowsocks`
@@ -46,3 +47,4 @@ PandoraBox系统内置Shadwosocks,ChinaDNS等服务，十分方便，如果是op
 打开 `网络`>`DHCP/DNS`>`HOSTS和解析文件`选项卡,`勾选忽略解析文件一项 `
 
 保存即可。
+

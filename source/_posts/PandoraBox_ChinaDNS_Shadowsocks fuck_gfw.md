@@ -15,8 +15,6 @@ tags:
 >Shadowsocks账号
 >刷路由器在这里就不写了，google一大堆教程
 
-## 1. 设置Shadowsocks
-
 PandoraBox系统内置Shadwosocks,ChinaDNS等服务，十分方便，如果是openwrt系统要自己安装
 
 ### 1. 解决dns污染的问题
@@ -44,7 +42,7 @@ PandoraBox系统内置Shadwosocks,ChinaDNS等服务，十分方便，如果是op
 
 把DNS转发一项设置为127.0.0.1#1053(1053是第一步里面ChinaDNS设置的端口)
 
-打开 `网络`>`DHCP/DNS`>`HOSTS和解析文件`选项卡,`勾选忽略解析文件一项 `
+打开 `网络`>`DHCP/DNS`>`HOSTS和解析文件`选项卡,勾选`忽略解析文件一项 `
 
 保存即可。
 

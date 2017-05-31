@@ -5,15 +5,15 @@
 # Site
 title: Ahri's Blog
 subtitle: 阿狸的小部落
-description: 阿狸的小部落
+description: 没有什么能够阻挡，你对自由的向往
 author: Ahri
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://blog.ifengxinzi.com   # with the https protocol
-enforce_ssl: https://blog.ifengxinzi.com   # without any protocol
+url: https://kemi.moe   # with the https protocol
+enforce_ssl: https://kemi.moe   # without any protocol
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

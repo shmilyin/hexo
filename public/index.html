@@ -79,7 +79,7 @@
 						<li>Links</li>
 						
 						
-						<li>About</li>
+						<li>Über</li>
 						
 					</ul>
 				</div>
@@ -288,7 +288,7 @@
 </blockquote>
 <h4 id="0-Backup"><a href="#0-Backup" class="headerlink" title="0. Backup"></a>0. Backup</h4><figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd <span class="regexp">/home/</span>git/gitlab</div><div class="line">sudo -u git -H bundle exec rake <span class="string">gitlab:</span><span class="string">backup:</span>create RAILS_ENV=production</div></pre></td></tr></table></figure>
 <p>备份完成后会在<code>/home/git/gitlab/backup</code>文件夹下生成已时间戳命名的文件<code>1459217332_gitlab_backup.tar</code></p>
-<h4 id="1-Stop-server"><a href="#1-Stop-server" class="headerlink" title="1. Stop server"></a>1. Stop server</h4><figure class="highlight arduino"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo service gitlab <span class="built_in">stop</span></div></pre></td></tr></table></figure>
+<h4 id="1-Stop-server"><a href="#1-Stop-server" class="headerlink" title="1. Stop server"></a>1. Stop server</h4><figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo<span class="built_in"> service </span>gitlab stop</div></pre></td></tr></table></figure>
       
     </div>
     

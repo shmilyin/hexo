@@ -13,7 +13,8 @@
 <meta property="og:url" content="https://kemi.moe/2016/03/29/gitlab_update_notes/index.html">
 <meta property="og:site_name" content="Ahri&#39;s Blog">
 <meta property="og:description" content="Gitlab 升级笔记 适用于使用源码安装的Gitlab GitLab Community Edition 8.3.2 fbb8b6e&amp;gt;  0. Backup12cd /home/git/gitlabsudo -u git -H bundle exec rake gitlab:backup:create RAILS_ENV=production 备份完成后会在/home/git/gitlab">
-<meta property="og:updated_time" content="2017-05-31T02:47:16.129Z">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-13T06:14:54.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Gitlab 源码安装版 升级笔记">
 <meta name="twitter:description" content="Gitlab 升级笔记 适用于使用源码安装的Gitlab GitLab Community Edition 8.3.2 fbb8b6e&amp;gt;  0. Backup12cd /home/git/gitlabsudo -u git -H bundle exec rake gitlab:backup:create RAILS_ENV=production 备份完成后会在/home/git/gitlab">
@@ -192,7 +193,7 @@
   
     <div class="article-meta">
       <a href="/2016/03/29/gitlab_update_notes/" class="article-date">
-  	<time datetime="2016-03-29T06:00:00.000Z" itemprop="datePublished">2016-03-29</time>
+  	<time datetime="2016-03-29T07:00:00.000Z" itemprop="datePublished">2016-03-29</time>
 </a>
     </div>
   
@@ -250,7 +251,7 @@
 <figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo -u git -H bundle exec rake gitlab:check <span class="attribute">RAILS_ENV</span>=production</div></pre></td></tr></table></figure>
 <p>If all items are green, then congratulations upgrade is complete!</p>
 <h4 id="5-Upgrade-GitLab-Shell"><a href="#5-Upgrade-GitLab-Shell" class="headerlink" title="5. Upgrade GitLab Shell"></a>5. Upgrade GitLab Shell</h4><p>GitLab Shell might be outdated, running the commands below ensures you’re using a compatible version:</p>
-<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd /home/git/gitlab-<span class="keyword">shell</span><span class="bash"></span></div><div class="line">sudo -u git -H git fetch</div><div class="line">sudo -u git -H git checkout v`cat /home/git/gitlab/GITLAB_SHELL_VERSION`</div></pre></td></tr></table></figure>
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd /home/git/gitlab-<span class="keyword">shell</span><span class="bash"></span></div><div class="line"><span class="bash">sudo -u git -H git fetch</span></div><div class="line"><span class="bash">sudo -u git -H git checkout v`cat /home/git/gitlab/GITLAB_SHELL_VERSION`</span></div></pre></td></tr></table></figure>
 <h4 id="One-line-upgrade-command"><a href="#One-line-upgrade-command" class="headerlink" title="One line upgrade command"></a>One line upgrade command</h4><p>You’ve read through the entire guide and probably already did all the steps one by one.<br>Below is a one line command with step 1 to 5 for the next time you upgrade.<br>Please replace X.X.X with the <a href="https://packages.gitlab.com/gitlab/gitlab-ce" target="_blank" rel="external">latest GitLab release</a>.</p>
 <figure class="highlight livescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">cd /home/git/gitlab; <span class="string">\</span></div><div class="line">  sudo -u git -H bundle exec rake gitlab:backup:create RAILS_ENV=production; <span class="string">\</span></div><div class="line">  sudo service gitlab stop; <span class="string">\</span></div><div class="line">  sudo -u git -H ruby -Ilib -e <span class="string">'require "gitlab/upgrader"'</span> -e <span class="string">'class Gitlab::Upgrader'</span> -e <span class="string">'def latest_version_raw'</span> -e <span class="string">'"vX.X.X"'</span> -e <span class="string">'end'</span> -e <span class="string">'end'</span> -e <span class="string">'Gitlab::Upgrader.new.execute'</span> -- -y; <span class="string">\</span></div><div class="line">  cd /home/git/gitlab-shell; <span class="string">\</span></div><div class="line">  sudo -u git -H git fetch; <span class="string">\</span></div><div class="line">  sudo -u git -H git checkout v`cat /home/git/gitlab/GITLAB_SHELL_VERSION`; <span class="string">\</span></div><div class="line">  cd /home/git/gitlab; <span class="string">\</span></div><div class="line">  sudo service gitlab start; <span class="string">\</span></div><div class="line">  sudo service nginx restart; <span class="string">\</span></div><div class="line">  sudo -u git -H bundle exec rake gitlab:check RAILS_ENV=production</div></pre></td></tr></table></figure>
 <p>####Note:<br>阿里云服务器ruby源不稳定。换国内的源</p>
@@ -261,7 +262,7 @@
 <p>升级是由于是从7.x 到8.x 样式变化很大，所以执行完后样式错乱。后来找了些文档才发现要重新生产asset文件。</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo -u git -H bundle exec rake <span class="string">assets:</span>clean <span class="string">assets:</span>precompile <span class="string">cache:</span>clear RAILS_ENV=production</div></pre></td></tr></table></figure>
 <p>重启</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">service gitlab start<span class="built_in"></span></div><div class="line">service nginx restart</div></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">service gitlab start</div><div class="line">service nginx restart</div></pre></td></tr></table></figure>
 <p>Done!</p>
 
       

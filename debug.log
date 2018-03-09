@@ -1,0 +1,14 @@
+{"name":"hexo","hostname":"DESKTOP-ME9G1E3","pid":10996,"level":20,"msg":"Hexo version: \u001b[35m3.5.0\u001b[39m","time":"2018-03-09T01:57:41.284Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-ME9G1E3","pid":10996,"level":20,"msg":"Working directory: \u001b[35mD:\\hexo\\\u001b[39m","time":"2018-03-09T01:57:41.288Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-ME9G1E3","pid":10996,"level":20,"msg":"Config loaded: \u001b[35mD:\\hexo\\_config.yml\u001b[39m","time":"2018-03-09T01:57:41.470Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-ME9G1E3","pid":10996,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-cli\u001b[39m","time":"2018-03-09T01:57:41.515Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-ME9G1E3","pid":10996,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-archive\u001b[39m","time":"2018-03-09T01:57:41.522Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-ME9G1E3","pid":10996,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-deployer-git\u001b[39m","time":"2018-03-09T01:57:41.634Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-ME9G1E3","pid":10996,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-tag\u001b[39m","time":"2018-03-09T01:57:41.638Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-ME9G1E3","pid":10996,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-marked\u001b[39m","time":"2018-03-09T01:57:41.647Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-ME9G1E3","pid":10996,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-index\u001b[39m","time":"2018-03-09T01:57:41.652Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-ME9G1E3","pid":10996,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-category\u001b[39m","time":"2018-03-09T01:57:41.656Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-ME9G1E3","pid":10996,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-ejs\u001b[39m","time":"2018-03-09T01:57:41.662Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-ME9G1E3","pid":10996,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-stylus\u001b[39m","time":"2018-03-09T01:57:41.664Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-ME9G1E3","pid":10996,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-server\u001b[39m","time":"2018-03-09T01:57:41.789Z","v":0}
+{"name":"hexo","hostname":"DESKTOP-ME9G1E3","pid":10996,"level":20,"msg":"Database saved","time":"2018-03-09T01:57:41.800Z","v":0}

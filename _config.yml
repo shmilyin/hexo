@@ -54,7 +54,8 @@ tag_map:
 	android: android
 	linux: linux
 	google: google
-	php: php
+  php: php
+	hhvm: hhvm
 	Xdebug: Xdebug
   Gitlab: Gitlab
   netease: 网易云音乐
